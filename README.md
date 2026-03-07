@@ -4,6 +4,10 @@
 Este projeto contém a automação de testes para a API pública JSONPlaceholder, desenvolvida como parte de um desafio técnico para QA. A solução utiliza Postman para a criação dos testes e GitHub Actions integrado com Newman para a execução contínua (CI).
 
 
+# 📌 Sobre a API
+
+A API utilizada neste projeto é a: https://jsonplaceholder.typicode.com.  Ela é uma API pública usada para testes e prototipação de aplicações.
+
 ## 📋 Endpoints Testados
 O projeto cobre os seguintes cenários:
 
@@ -27,13 +31,14 @@ Confirmação de que a resposta é um Array e contém dados.
 
 
 ## 🛠️ Tecnologias Utilizadas
-Postman: Ferramenta para design e execução dos testes de API.
 
-Newman: Executor de coleções Postman via linha de comando.
+Postman – criação dos testes de API
 
-GitHub Actions: Automação do pipeline de CI.
+Newman – execução das collections via CLI
 
-Node.js: Ambiente de execução para o Newman.
+GitHub Actions – execução automatizada da pipeline
+
+Node.js – ambiente de execução
 
 
 ## ⚙️ Como Rodar os Testes
