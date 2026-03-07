@@ -21,7 +21,6 @@ jobs:
 
       - name: Instalar o Newman
         run: npm install -g newman
-
-      - name: Rodar os testes da Collection
-        # Substitua 'New Collection.postman_collection.json' pelo nome real do seu arquivo
-        run: newman run "New Collection.postman_collection.json"
+        
+       - name: Rodar os testes da Collection
+        run: newman run "jsonplaceholder_api_tests.postman_collection.json"
