@@ -28,7 +28,8 @@ jobs:
 
       - name: Executar testes via Postman API
         run: |
-          newman run "https://api.postman.com/collections/23724069-846a9406-871f-417c-8848ad9cef118?access_key=${{ secrets.POSTMAN_API_KEY }}" \
+          newman run "https://api.postman.com/collections/23724069-846a9406-871f-417c-8848-ad9cef118" \
+          --header "X-Api-Key: ${{ secrets.POSTMAN_API_KEY }}" \
           -r cli,htmlextra \
           --reporter-htmlextra-export report.html
 
