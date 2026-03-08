@@ -25,12 +25,16 @@ jobs:
         run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
-          
-      - name: Executar testes via Postman API
-        run: |
-          newman run "https://api.postman.com/collections/23724069-f07f997c-6c01-4c38-bbb0-09aabaac5954" \
+
+
+      
+       - name: Executar testes via Postman API
+         run: |
+          newman run "https://api.postman.com/collections/f07f997c-6c01-4c38-bbb0-09aabaac5954" \
           --header "X-Api-Key: ${{ secrets.POSTMAN_API_KEY }}" \
-          --suppress-exit-code
+          --delay-request 500 \
+          -r cli,htmlextra \
+          --reporter-htmlextra-export report.html
           
       - name: Upload do relatório
         uses: actions/upload-artifact@v4
