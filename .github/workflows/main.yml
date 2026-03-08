@@ -28,11 +28,11 @@ jobs:
 
       - name: Executar testes via Postman API
         run: |
-          newman run "https://api.postman.com/collections/23724069-846a9406-871f-417c-8848-ad9cef118" \
+          newman run "https://api.postman.com/collections/f07f997c-6c01-4c38-bbb0-09aabaac5954" \
           --header "X-Api-Key: ${{ secrets.POSTMAN_API_KEY }}" \
           -r cli,htmlextra \
           --reporter-htmlextra-export report.html
-
+          
       - name: Upload do relatório
         uses: actions/upload-artifact@v4
         if: always()
