@@ -2,6 +2,8 @@
 
 ## 📌 Sobre o Projeto
 
+
+
 Este repositório contém a automação de testes para a API pública **JSONPlaceholder**.
 
 Os testes foram implementados utilizando **Postman** e são executados automaticamente através do **Newman**, integrado ao **GitHub Actions** para execução contínua.
