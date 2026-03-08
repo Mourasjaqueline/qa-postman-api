@@ -28,9 +28,9 @@ jobs:
 
 
       
-       - name: Executar testes via Postman API
-         run: |
-          newman run "https://api.postman.com/collections/f07f997c-6c01-4c38-bbb0-09aabaac5954" \
+      - name: Executar testes via Postman API
+        run: |
+          newman run "https://api.postman.com/collections/23724069-f07f997c-6c01-4c38-bbb0-09aabaac5954" \
           --header "X-Api-Key: ${{ secrets.POSTMAN_API_KEY }}" \
           --delay-request 500 \
           -r cli,htmlextra \
